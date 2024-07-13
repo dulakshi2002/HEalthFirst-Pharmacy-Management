@@ -1,0 +1,224 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #164A41;
+  --secondary: #4D774E;
+  --accent: #9DC88D;
+  --hover: #F1B24A;
+  --text: #FFFFFF;
+  --error: rgb(179, 21, 21);
+  --warning: rgb(221, 167, 167);
+  --other: rgb(73, 180, 127)
+}
+
+/* Body and general styling */
+body {
+  background: var(--text);
+  color: var(--primary);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Header styling */
+header {
+  background: var(--primary);
+  color: var(--text);
+}
+
+header a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Homepage styling */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+.feedback-details {
+  background: var(--accent);
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+  width: 80%; /* Set feedback details width */
+}
+
+.feedback-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: var(--primary);
+  word-wrap: break-word; 
+}
+
+.feedback-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: var(--primary);
+  padding: 6px;
+  border-radius: 50%;
+  color: #ffffff;
+}
+.average-rating {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+ 
+  width: 80%; /* Set feedback details width */
+}
+
+.average-rating h3 {
+  margin-top: 0;
+}
+
+.average-rating p {
+  margin-bottom: 0;
+}
+
+.rating-buttons {
+  display: flex;
+}
+
+.rating-buttons button {
+  color: #164A41;
+  margin-right: 5px;
+  background-color: var(--accent);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rating-buttons button:hover {
+  background-color: var(--hover);
+}
+
+.rating-buttons button.selected {
+  background-color: var(--hover);
+}
+
+label,
+input {
+  display: block;
+}
+
+form button {
+  background: var(--text);
+  border: 0;
+  color: var(--primary);
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background: var(--hover);
+}
+
+div.error {
+  padding: 10px;
+  background: var(--warning);
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.action-buttons button,
+.edit_more {
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: #f1b24a;
+    border-color: #f1b24a;
+    color: #ffffff;
+  }
+}
+
+/* Style the star rating */
+.star-rating {
+  display: inline-block;
+  font-size: 24px;
+  color: gold;
+}
+
+.star {
+  cursor: pointer;
+}
+
+/* Style the filled stars */
+.filled {
+  color: gold;
+}
+
+/* Style the empty stars */
+.empty {
+  color: #ccc;
+}
+
+.create1 {
+  height: fit-content;
+
+  width: 100%;
+  margin: 0 auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding to create space inside the box */
+    border-radius: 8px; /* Add rounded corners to the box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    background-color: var(--accent); /* Set the background color of the box */
+}
+.create1 h2{
+  font-size: large;
+  text-align: center;
+}
+
+.feedback-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.feedback-form {
+width: 100%;
+  margin-right: 20px; /* Add margin for spacing */
+  padding-left: 5%;
+}
